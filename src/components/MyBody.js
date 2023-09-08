@@ -39,9 +39,23 @@ const MyBody = () => {
       <hr />
       <div className="profileSection">
         <h1 className="mb-6 text-5xl font-bold">{profileDataEN.title}</h1>
+
+        <h1 className="mb-6 text-3xl font-bold">{profileDataEN.title}</h1>
         <label className="font-bold">{profileDataEN.dogumTarihi} </label>
         <label> 30.03.1997</label>
+        <label className="font-bold">{profileDataEN.sehir} </label>
+        <label> İstanbul</label>
+        <label className="font-bold">{profileDataEN.egitim} </label>
+        <label> Gazi Uni. Enerji Müh. Lisans, 2019</label>
+        <label className="font-bold">{profileDataEN.rol} </label>
+        <label> Frontend, UI</label>
+
+        <h1 className="mb-6 text-3xl font-bold">
+          {profileDataEN.hakkindaBaslik}
+        </h1>
+        <p>{profileDataEN.hakkindaParagraf}</p>
       </div>
+      <hr />
     </div>
   );
 };
