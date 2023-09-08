@@ -1,6 +1,8 @@
 import { infoDataEN, infoDataTR } from "../data/BodyData";
 import { skillsData } from "../data/SkillsData";
 import { profileDataEN, profileDataTR } from "../data/ProfileData";
+import { projectsData } from "../data/ProjectsData";
+import { ProjectsData } from "../data/ProjectsData";
 
 const MyBody = () => {
   return (
@@ -29,18 +31,24 @@ const MyBody = () => {
       <div className="skillsSection">
         <h1 className="mb-6 text-5xl font-bold">{skillsData.title}</h1>
 
-        <h1 className="mb-6 text-3xl font-bold">{skillsData.jsTitle}</h1>
+        <h1 className="mb-6 text-3xl  text-indigo-700">{skillsData.jsTitle}</h1>
         <p>{skillsData.jsParagraph}</p>
-        <h1 className="mb-6 text-3xl font-bold">{skillsData.reactTitle}</h1>
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {skillsData.reactTitle}
+        </h1>
         <p>{skillsData.reactParagraph}</p>
-        <h1 className="mb-6 text-3xl font-bold">{skillsData.nodeTitle}</h1>
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {skillsData.nodeTitle}
+        </h1>
         <p>{skillsData.nodeParagraph}</p>
       </div>
       <hr />
       <div className="profileSection">
-        <h1 className="mb-6 text-5xl font-bold">{profileDataEN.title}</h1>
+        <h1 className="mb-6 text-5xl font-bold ">{profileDataEN.title}</h1>
 
-        <h1 className="mb-6 text-3xl font-bold">{profileDataEN.title}</h1>
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {profileDataEN.title}
+        </h1>
         <label className="font-bold">{profileDataEN.dogumTarihi} </label>
         <label> 30.03.1997</label>
         <label className="font-bold">{profileDataEN.sehir} </label>
@@ -50,12 +58,27 @@ const MyBody = () => {
         <label className="font-bold">{profileDataEN.rol} </label>
         <label> Frontend, UI</label>
 
-        <h1 className="mb-6 text-3xl font-bold">
+        <h1 className="mb-6 text-3xl text-indigo-700">
           {profileDataEN.hakkindaBaslik}
         </h1>
         <p>{profileDataEN.hakkindaParagraf}</p>
       </div>
       <hr />
+      <div className="projectsSection">
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {projectsData.proje1Baslik}
+        </h1>
+        <div>{ProjectsData()}</div>
+
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {projectsData.proje2Baslik}
+        </h1>
+        <div>{ProjectsData()}</div>
+        <h1 className="mb-6 text-3xl  text-indigo-700">
+          {projectsData.proje3Baslik}
+        </h1>
+        <div>{ProjectsData()}</div>
+      </div>
     </div>
   );
 };
