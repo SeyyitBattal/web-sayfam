@@ -1,0 +1,15 @@
+body {
+  margin: 2rem 13rem 0rem 13rem;
+}
+.toggle_language {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+.topButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.headerDiv {
+  margin-bottom: 5rem;
+}
