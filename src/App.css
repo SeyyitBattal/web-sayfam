@@ -19,3 +19,11 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.viewGithub {
+  justify-content: space-between;
+}
+.projects-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,7 +1,6 @@
 import { infoDataEN, infoDataTR } from "../data/BodyData";
 import { skillsData } from "../data/SkillsData";
 import { profileDataEN, aboutMe } from "../data/ProfileData";
-import { projectsData } from "../data/ProjectsData";
 import { ProjectsData } from "../data/ProjectsData";
 import { hakkimda } from "../data/ProfileData";
 
@@ -85,21 +84,7 @@ const MyBody = () => {
       </div>
 
       <hr />
-      <div className="projectsSection">
-        <h1 className="mb-6 text-3xl  text-indigo-700">
-          {projectsData.proje1Baslik}
-        </h1>
-        <div>{ProjectsData()}</div>
-
-        <h1 className="mb-6 text-3xl  text-indigo-700">
-          {projectsData.proje2Baslik}
-        </h1>
-        <div>{ProjectsData()}</div>
-        <h1 className="mb-6 text-3xl  text-indigo-700">
-          {projectsData.proje3Baslik}
-        </h1>
-        <div>{ProjectsData()}</div>
-      </div>
+      <ProjectsData />
     </div>
   );
 };
