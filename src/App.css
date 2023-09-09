@@ -13,3 +13,9 @@ body {
 .headerDiv {
   margin-bottom: 5rem;
 }
+
+.profileAndAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
