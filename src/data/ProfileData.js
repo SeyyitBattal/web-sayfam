@@ -2,7 +2,7 @@ export const profileDataEN = {
   title: "Profile",
 };
 
-export const hakkimda = [
+export const myInfo = [
   {
     dogumTrh: "30.03.1997",
     ikametgah: "İstanbul",
