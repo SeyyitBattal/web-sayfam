@@ -22,13 +22,13 @@ export const ProjectsData = () => {
       </div>
       <a
         href="#"
-        class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+        className="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
       >
         Github
       </a>
       <a
         href="#"
-        class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+        className="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
       >
         View Site
       </a>
