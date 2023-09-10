@@ -1,23 +1,22 @@
+import calculator from "../foto/calculator.png";
 export const ProjectsData = () => {
   return (
     <div className="projectsSection">
-      <h1 className="baslik sm:text-center sm:text-5xl mx-auto mb-7 lg:text-5xl max-sm:text-3xl max-sm:text-center font-semibold  text-black ">
-        Projects
-      </h1>
+      <h1 className="mb-6 text-5xl font-bold">Projects</h1>
       <div className="projects-boxes">
         <div className="box-1 mb-9">
-          <div className="p1 flex lg:w-9/12  max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+          <div className="p1 flex max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <img
                 className=" lg:w-[360px] lg:h-[360px] rounded-lg"
-                src=""
-                alt=""
+                src={calculator}
+                alt="calculator"
               />
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
                 <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
-                  PROJE ADI 1
+                  Modern Calculator
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">
                   A simple, customizable, minimal setup cookie plugin that
@@ -58,7 +57,7 @@ export const ProjectsData = () => {
           </div>
         </div>
         <div className="box-2 mb-9">
-          <div className="p1 flex lg:w-9/12  max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <img
                 className=" lg:w-[360px] lg:h-[360px] rounded-lg"
@@ -110,7 +109,7 @@ export const ProjectsData = () => {
           </div>
         </div>
         <div className="box-3 mb-9">
-          <div className="p1 flex lg:w-9/12  max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <img
                 className=" lg:w-[360px] lg:h-[360px] rounded-lg"

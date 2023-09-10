@@ -18,11 +18,12 @@ const MyHeader = () => {
             TÜRKÇE'YE GEÇ
           </span>
         </div>
+
         <div className="topButtons">
-          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
             Skills
           </button>
-          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded mx-2">
             Projects
           </button>
           <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
@@ -30,18 +31,18 @@ const MyHeader = () => {
           </button>
         </div>
 
-        <div className="">
+        <div className="intro mt-20">
           <h3 className=" lg:text-base sm:pb-3 text-indigo-700">
             ————— {item.isim}
           </h3>
-          <div className="flex lg:flex-row lg:items-end sm:w-9/12 ">
+          <div className="flex content-center lg:flex-row lg:items-end ">
             <div className=" pr-5  flex-1">
-              <h2 className=" mb-6 text-5xl font-bold ">{item.slogan}</h2>
-              <p className="text-gray-600 mb-2 text-2xl pr-3 ">
+              <h2 className=" mb-9 text-6xl font-bold ">{item.slogan}</h2>
+              <p className="text-gray-600 mb-9 text-2xl pr-3 ">
                 {item.aciklama}
               </p>
               <div className="flex lg:mt-3 gap-2 max-sm:my-5  max-sm:w-9/12 sm:mt-3 max-lg:mb-3">
-                <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+                <button className="bg-blue-800 hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-10 border border-blue-800  rounded">
                   Hire me
                 </button>
                 <a href="https://github.com/SeyyitBattal">
@@ -54,7 +55,7 @@ const MyHeader = () => {
             </div>
             <div>
               <img
-                className="  lg:w-[360px] lg:h-[360px] rounded-lg"
+                className="  lg:w-[360px] lg:h-[360px] rounded-lg shadow-2xl"
                 src={item.myPhoto}
                 alt=""
               />
