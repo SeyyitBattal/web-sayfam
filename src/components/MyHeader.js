@@ -1,33 +1,70 @@
+import { headerData } from "../data/HeaderData";
+
 const MyHeader = () => {
-  return (
-    <div className="headerDiv">
-      <div className="toggle_language">
-        <label className="relative inline-flex items-center mr-5 cursor-pointer">
-          <input type="checkbox" value="" className="sr-only peer" checked />
-          <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+  const render = headerData.map((item) => {
+    return (
+      <div className="headerDiv">
+        <div className="toggle_language">
+          <label className="relative inline-flex items-center mr-5 cursor-pointer">
+            <input type="checkbox" value="" className="sr-only peer" checked />
+            <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+
+            <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
+              DARK MODE |
+            </span>
+          </label>
 
           <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
-            DARK MODE |
+            TÜRKÇE'YE GEÇ
           </span>
-        </label>
+        </div>
+        <div className="topButtons">
+          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+            Skills
+          </button>
+          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+            Projects
+          </button>
+          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+            Hire me
+          </button>
+        </div>
 
-        <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
-          TÜRKÇE'YE GEÇ
-        </span>
+        <div className="">
+          <h3 className=" lg:text-base sm:pb-3 text-indigo-700">
+            ————— {item.isim}
+          </h3>
+          <div className="flex lg:flex-row lg:items-end sm:w-9/12 ">
+            <div className=" pr-5  flex-1">
+              <h2 className=" mb-6 text-5xl font-bold ">{item.slogan}</h2>
+              <p className="text-gray-600 mb-2 text-2xl pr-3 ">
+                {item.aciklama}
+              </p>
+              <div className="flex lg:mt-3 gap-2 max-sm:my-5  max-sm:w-9/12 sm:mt-3 max-lg:mb-3">
+                <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+                  Hire me
+                </button>
+                <a href="https://github.com/SeyyitBattal">
+                  <img src={item.github} alt="Seyyit Battal Arvas" />
+                </a>
+                <a href="https://www.linkedin.com/in/seyyit-battal-arvas-aaa86b110/">
+                  <img src={item.linkedin} alt="Seyyit Battal Arvas" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                className="  lg:w-[360px] lg:h-[360px] rounded-lg"
+                src={item.myPhoto}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="topButtons">
-        <button className="bg-transparent hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-          Skills
-        </button>
-        <button className="bg-transparent hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-          Projects
-        </button>
-        <button className="bg-transparent hover:bg-blue-800 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-          Hire me
-        </button>
-      </div>
-    </div>
-  );
+    );
+  });
+  return <div className=" max-sm:w-full m-auto">{render}</div>;
 };
 
 export default MyHeader;
