@@ -18,27 +18,39 @@ const MyFooter = () => {
   };
 
   return (
-    <div>
-      <h1 className="mb-6 text-4xl font-bold">{footerData.footerSloganEN}</h1>
-      <label className="underline dark:text-pink-600">{footerData.mail}</label>
-      <a
-        href="#"
-        className="font-medium text-blue-600 dark:text-slate-950 hover:underline"
-      >
-        Personal Blog
-      </a>
-      <a
-        href="#"
-        className="font-medium text-blue-600 dark:text-green-500 hover:underline"
-      >
-        Github
-      </a>
-      <a
-        href="#"
-        className="font-medium text-blue-600 dark:text-blue-600 hover:underline"
-      >
-        Linkedin
-      </a>
+    <div className="mt-20 ">
+      <h1 className="mb-6 mt-20 text-5xl font-bold flex flex-wrap">
+        Let's work together on <br /> your next product.
+      </h1>
+
+      <div className="footer-mail-links mt-20 flex justify-between">
+        <div>
+          👉
+          <label className="underline dark:text-pink-600">
+            {footerData.mail}
+          </label>
+        </div>
+        <div className="footer-links">
+          <a
+            href={footerData.blog}
+            className="font-medium text-blue-600 dark:text-slate-950 hover:underline"
+          >
+            Personal Blog
+          </a>
+          <a
+            href={footerData.github}
+            className="font-medium text-blue-600 dark:text-green-500 hover:underline mx-5"
+          >
+            Github
+          </a>
+          <a
+            href={footerData.linkedin}
+            className="font-medium text-blue-600 dark:text-blue-600 hover:underline"
+          >
+            Linkedin
+          </a>
+        </div>
+      </div>
       <div className=" flex flex-col items-center my-20 gap-6 mx-8 bg-white ">
         <div className="send-message">
           <button

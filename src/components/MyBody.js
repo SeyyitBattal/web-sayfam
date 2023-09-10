@@ -6,9 +6,9 @@ const MyBody = () => {
   return (
     <div className="bodyDiv">
       <Skills />
-      <hr />
+      <hr className="my-14" />
       <Profile />
-      <hr />
+      <hr className="my-14" />
       <ProjectsData />
     </div>
   );

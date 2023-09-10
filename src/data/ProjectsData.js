@@ -70,7 +70,7 @@ export const ProjectsData = () => {
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
                 <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
-                  task list with deadline
+                  Task list with deadline
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">
                   A simple, customizable, minimal setup cookie plugin that
