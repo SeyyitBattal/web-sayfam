@@ -9,11 +9,13 @@ export const ProjectsData = () => {
         <div className="box-1 mb-9">
           <div className="p1 flex max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
-              <img
-                className=" lg:w-[360px] lg:h-[360px] rounded-lg"
-                src={calculator}
-                alt="calculator"
-              />
+              <a href="https://calculator-rouge-beta.vercel.app/">
+                <img
+                  className=" lg:w-[360px] lg:h-[360px] rounded-lg"
+                  src={calculator}
+                  alt="calculator"
+                />
+              </a>
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
@@ -61,11 +63,13 @@ export const ProjectsData = () => {
         <div className="box-2 mb-9">
           <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
-              <img
-                className=" lg:w-[360px] lg:h-[360px] rounded-lg"
-                src={taskList}
-                alt="Task List"
-              />
+              <a href="https://task-list-with-deadline.vercel.app/">
+                <img
+                  className=" lg:w-[360px] lg:h-[360px] rounded-lg"
+                  src={taskList}
+                  alt="Task List"
+                />
+              </a>
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
@@ -113,11 +117,13 @@ export const ProjectsData = () => {
         <div className="box-3 mb-9">
           <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
-              <img
-                className=" lg:w-[360px] lg:h-[360px] rounded-lg"
-                src=""
-                alt=""
-              />
+              <a href="">
+                <img
+                  className=" lg:w-[360px] lg:h-[360px] rounded-lg"
+                  src=""
+                  alt=""
+                />
+              </a>
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
@@ -146,16 +152,10 @@ export const ProjectsData = () => {
                 </button>
               </div>
               <div className="link flex gap-3 text-indigo-700 text-decoration-line: underline max-sm:pb-3 viewGithub">
-                <a
-                  href="https://calculator-rouge-beta.vercel.app/"
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   View Site
                 </a>
-                <a
-                  href="https://github.com/SeyyitBattal/fsweb-s9g2-task-yonetimi-2"
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   Github
                 </a>
               </div>
