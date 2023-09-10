@@ -16,8 +16,6 @@ body {
 
 .profileAndAbout {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .viewGithub {
