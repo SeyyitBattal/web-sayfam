@@ -1,4 +1,6 @@
 import calculator from "../foto/calculator.png";
+import taskList from "../foto/TaskList.png";
+
 export const ProjectsData = () => {
   return (
     <div className="projectsSection">
@@ -61,14 +63,14 @@ export const ProjectsData = () => {
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <img
                 className=" lg:w-[360px] lg:h-[360px] rounded-lg"
-                src=""
-                alt=""
+                src={taskList}
+                alt="Task List"
               />
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
                 <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
-                  PROJE ADI 2
+                  task list with deadline
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">
                   A simple, customizable, minimal setup cookie plugin that
@@ -93,7 +95,7 @@ export const ProjectsData = () => {
               </div>
               <div className="link flex gap-3 text-indigo-700 text-decoration-line: underline max-sm:pb-3 viewGithub">
                 <a
-                  href="https://calculator-rouge-beta.vercel.app/"
+                  href="https://task-list-with-deadline.vercel.app/"
                   target="_blank"
                 >
                   View Site
