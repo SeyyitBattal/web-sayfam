@@ -5,9 +5,9 @@ export const ProjectsData = () => {
   return (
     <div className="projectsSection">
       <h1 className="mb-6 text-5xl font-bold">Projects</h1>
-      <div className="projects-boxes">
-        <div className="box-1 mb-9">
-          <div className="p1 flex max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+      <div className="projects-boxes ">
+        <div className="box-1 mb-9 ">
+          <div className="p1 flex max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white dark:bg-slate-800  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <a href="https://calculator-rouge-beta.vercel.app/">
                 <img
@@ -19,7 +19,7 @@ export const ProjectsData = () => {
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
-                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
+                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 dark:text-indigo-200 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
                   Modern Calculator
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">
@@ -61,7 +61,7 @@ export const ProjectsData = () => {
           </div>
         </div>
         <div className="box-2 mb-9">
-          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white dark:bg-slate-800  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <a href="https://task-list-with-deadline.vercel.app/">
                 <img
@@ -73,7 +73,7 @@ export const ProjectsData = () => {
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
-                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
+                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 dark:text-indigo-200 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
                   Task list with deadline
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">
@@ -115,7 +115,7 @@ export const ProjectsData = () => {
           </div>
         </div>
         <div className="box-3 mb-9">
-          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white  rounded-lg max-sm:flex-col">
+          <div className="p1 flex   max-sm:mx-4 max-lg:flex-col max-lg:m-8  lg:mx-auto bg-white dark:bg-slate-800  rounded-lg max-sm:flex-col">
             <div className="image lg:w-9/12 max-lg:w-full  max-sm:w-full max-sm:mb-3">
               <a href="">
                 <img
@@ -127,7 +127,7 @@ export const ProjectsData = () => {
             </div>
             <div className="p-text w-full  max-lg:p-8  m-auto">
               <div className="">
-                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
+                <h2 className="p1-baslik lg:pb-6 max-sm:pb-3 sm:pb-4 sm:text-2xl text-indigo-700 dark:text-indigo-200 lg:text-3xl max-sm:text-2xl font-semibold  max-lg:pt-4">
                   PROJE ADI 3
                 </h2>
                 <p className="p1-aciklama lg:pb-6 lg:text-xl max-lg:pb-4 text-slate-500">

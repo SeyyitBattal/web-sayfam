@@ -9,15 +9,17 @@ function App() {
   const [darkMode, setDarkMode, onClickHandler] = useInput("Mood", false);
 
   return (
-    <div className={darkMode ? "App dark" : "App"}>
-      <header>
-        <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
-      </header>
-      <div>
-        <MyBody />
-      </div>
-      <div>
-        <MyFooter />
+    <div className={darkMode ? "dark App" : "App"}>
+      <div className="bg-white dark:bg-slate-800 text-black dark:text-gray-400">
+        <header>
+          <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
+        </header>
+        <div>
+          <MyBody />
+        </div>
+        <div>
+          <MyFooter />
+        </div>
       </div>
     </div>
   );

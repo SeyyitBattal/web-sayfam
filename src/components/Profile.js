@@ -7,7 +7,7 @@ export const Profile = () => {
 
       <div className="profileAndAbout">
         <div>
-          <h1 className="mb-2 lg:text-4xl text-indigo-700 font-medium max-lg:text-3xl max-lg:text-center">
+          <h1 className="mb-2 lg:text-4xl text-indigo-700 dark:text-indigo-200 font-medium max-lg:text-3xl max-lg:text-center">
             {profileDataEN.title}
           </h1>
 
@@ -32,7 +32,7 @@ export const Profile = () => {
         </div>
 
         <div className="about-box lg:w-1/2 sm:w-9/12 max-sm:w-9/12 max-lg:px-4  max-sm:m-auto  max-sm:px-4   max-sm:mt-5 sm:mx-auto  ">
-          <h3 className="mb-2 lg:text-4xl text-indigo-700 font-medium max-lg:text-3xl max-lg:text-center ">
+          <h3 className="mb-2 lg:text-4xl text-indigo-700 dark:text-indigo-200 font-medium max-lg:text-3xl max-lg:text-center ">
             About Me
           </h3>
           <div className=" text-black lg:text-xl sm:text-lg max-lg:px-5  ">

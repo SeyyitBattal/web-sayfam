@@ -18,7 +18,7 @@ const MyFooter = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-white dark:bg-black">
       <h1 className="mb-6 mt-20 text-5xl font-bold flex flex-wrap">
         Let's work together on <br /> your next product.
       </h1>
@@ -26,14 +26,14 @@ const MyFooter = () => {
       <div className="footer-mail-links mt-20 flex justify-between">
         <div>
           👉
-          <label className="underline dark:text-pink-600">
+          <label className="underline text-pink-600 dark:text-indigo-200">
             {footerData.mail}
           </label>
         </div>
         <div className="footer-links">
           <a
             href={footerData.blog}
-            className="font-medium text-blue-600 dark:text-slate-950 hover:underline"
+            className="font-medium text-blue-600 dark:text-white hover:underline"
           >
             Personal Blog
           </a>
@@ -45,7 +45,7 @@ const MyFooter = () => {
           </a>
           <a
             href={footerData.linkedin}
-            className="font-medium text-blue-600 dark:text-blue-600 hover:underline"
+            className="font-medium text-blue-600 dark:text-blue-400 hover:underline"
           >
             Linkedin
           </a>
