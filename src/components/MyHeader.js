@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { headerData } from "../data/HeaderData";
 
 const MyHeader = (props) => {
@@ -10,7 +9,7 @@ const MyHeader = (props) => {
 
   const render = headerData.map((item) => {
     return (
-      <div className="headerDiv">
+      <div className="headerDiv ">
         <div className="toggle_language">
           <label className="relative inline-flex items-center mr-5 cursor-pointer">
             <div className={props.darkMode ? "toogle toggled" : "toggle"}>
@@ -52,7 +51,7 @@ const MyHeader = (props) => {
           <div className="flex content-center lg:flex-row lg:items-end ">
             <div className=" pr-5  flex-1">
               <h2 className=" mb-9 text-6xl font-bold ">{item.slogan}</h2>
-              <p className="text-gray-600 mb-9 text-2xl pr-3 ">
+              <p className="text-gray-600 mb-9 text-2xl pr-3 bg-white dark:bg-black">
                 {item.aciklama}
               </p>
               <div className="flex lg:mt-3 gap-2 max-sm:my-5  max-sm:w-9/12 sm:mt-3 max-lg:mb-3">

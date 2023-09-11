@@ -9,7 +9,7 @@ function App() {
   const [darkMode, setDarkMode, onClickHandler] = useInput("Mood", false);
 
   return (
-    <div className={darkMode ? "dark-mode App" : "App"}>
+    <div className={darkMode ? "App dark" : "App"}>
       <header>
         <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
       </header>
