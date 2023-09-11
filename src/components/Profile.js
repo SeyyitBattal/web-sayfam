@@ -11,10 +11,10 @@ export const Profile = () => {
             {profileDataEN.title}
           </h1>
 
-          {myInfo.map((item) => (
+          {myInfo.map((item, key) => (
             <div className="basic-info max-sm:pl-4 ">
               <div className="profil-detay flex max-lg:w-[300px] lg:h-[222px] max-sm:mb-3 max-sm:pl-3 sm:mb-3 max-lg:mx-auto ">
-                <div className=" lg:w-[150px]  max-sm:text-lg pr-5 sm:text-lg  lg:text-xl h-full text-black font-medium  sm:m-0 ">
+                <div className=" lg:w-[150px] max-sm:text-lg pr-5 sm:text-lg  lg:text-xl h-full text-black font-medium  sm:m-0 ">
                   <p className=" pb-2">Doğum tarihi</p>
                   <p className=" pb-2">İkamet Şehri</p>
                   <p className=" pb-2">Eğitim Durumu</p>
