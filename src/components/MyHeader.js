@@ -33,13 +33,13 @@ const MyHeader = (props) => {
         </div>
 
         <div className="topButtons">
-          <button className="bg-transparent border-transparent hover:bg-white text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
             Skills
           </button>
-          <button className="bg-transparent border-transparent hover:bg-white text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded mx-2">
+          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded mx-2">
             Projects
           </button>
-          <button className="bg-transparent hover:bg-blue-800 text-blue-800 dark:bg-white font-semibold py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent hover:bg-blue-800 hover:text-white text-blue-800 dark:bg-white font-semibold py-2 px-10 border border-blue-800 hover:border-transparent rounded">
             Hire me
           </button>
         </div>
@@ -57,7 +57,7 @@ const MyHeader = (props) => {
                 {item.aciklama}
               </p>
               <div className="flex lg:mt-3 gap-2 max-sm:my-5  max-sm:w-9/12 sm:mt-3 max-lg:mb-3">
-                <button className="dark:bg-indigo-200 dark:text-black hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-10 border border-blue-800  rounded">
+                <button className="dark:bg-indigo-200 dark:text-black hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800  rounded">
                   Hire me
                 </button>
                 <a href="https://github.com/SeyyitBattal">

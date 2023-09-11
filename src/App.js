@@ -10,16 +10,14 @@ function App() {
 
   return (
     <div className={darkMode ? "dark App" : "App"}>
-      <div className="bg-white dark:bg-slate-900 text-black dark:text-gray-300">
-        <header>
-          <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
-        </header>
-        <div>
+      <div className="bg-white dark:bg-slate-900 text-black dark:text-gray-300 ">
+        <div className="allPage">
+          <header>
+            <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
+          </header>
           <MyBody />
         </div>
-        <div>
-          <MyFooter />
-        </div>
+        <MyFooter />
       </div>
     </div>
   );

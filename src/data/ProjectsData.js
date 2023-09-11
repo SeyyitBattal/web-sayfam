@@ -33,7 +33,7 @@ export const ProjectsData = () => {
               </div>
 
               <div className="buttons flex lg:mb-6 max-lg:pb-4 gap-3 flex-wrap ">
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   react
                 </button>
                 <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 text-blue-700 font-semibold dark:text-indigo-300 hover:text-white py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
@@ -87,13 +87,13 @@ export const ProjectsData = () => {
               </div>
 
               <div className="buttons flex lg:mb-6 max-lg:pb-4 gap-3 flex-wrap">
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   react
                 </button>
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   redux
                 </button>
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   axios
                 </button>
               </div>
@@ -141,13 +141,13 @@ export const ProjectsData = () => {
               </div>
 
               <div className="buttons flex lg:mb-6 max-lg:pb-4 gap-3 flex-wrap">
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   react
                 </button>
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   redux
                 </button>
-                <button className="bg-transparent dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
+                <button className="bg-transparent text-blue-800 dark:bg-gray-700 hover:bg-blue-800 dark:text-indigo-300 font-semibold hover:text-white  py-1 px-4 border border-indigo-300 hover:border-transparent rounded">
                   axios
                 </button>
               </div>

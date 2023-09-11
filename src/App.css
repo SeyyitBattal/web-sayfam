@@ -1,5 +1,7 @@
-body {
-  margin: 2rem 13rem 0rem 13rem;
+.allPage {
+  /* margin: 2rem 13rem 0rem 13rem; */
+  margin: 0 auto;
+  max-width: 65%;
 }
 .toggle_language {
   display: flex;
