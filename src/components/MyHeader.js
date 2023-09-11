@@ -10,7 +10,7 @@ const MyHeader = (props) => {
 
   const render = headerData.map((item) => {
     return (
-      <div className="headerDiv ">
+      <div className="headerDiv">
         <div className="toggle_language">
           <label className="relative inline-flex items-center mr-5 cursor-pointer">
             <div className={props.darkMode ? "toogle toggled" : "toggle"}>

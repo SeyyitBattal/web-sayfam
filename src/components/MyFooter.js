@@ -18,7 +18,7 @@ const MyFooter = () => {
   };
 
   return (
-    <div className="mt-20 ">
+    <div className="mt-20 dark: bg-red-600">
       <h1 className="mb-6 mt-20 text-5xl font-bold flex flex-wrap">
         Let's work together on <br /> your next product.
       </h1>
