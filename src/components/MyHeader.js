@@ -9,7 +9,7 @@ const MyHeader = (props) => {
 
   const render = headerData.map((item) => {
     return (
-      <div className=" bg-white dark:bg-slate-800 ">
+      <div>
         <div className="toggle_language">
           <label className="relative inline-flex items-center mr-5 cursor-pointer">
             <div className={props.darkMode ? "toogle toggled" : "toggle"}>
@@ -33,29 +33,31 @@ const MyHeader = (props) => {
         </div>
 
         <div className="topButtons">
-          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent border-transparent hover:bg-white text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
             Skills
           </button>
-          <button className="bg-transparent border-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded mx-2">
+          <button className="bg-transparent border-transparent hover:bg-white text-blue-800 dark:text-gray-500 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded mx-2">
             Projects
           </button>
-          <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-10 border border-blue-800 hover:border-transparent rounded">
+          <button className="bg-transparent hover:bg-blue-800 text-blue-800 dark:bg-white font-semibold py-2 px-10 border border-blue-800 hover:border-transparent rounded">
             Hire me
           </button>
         </div>
 
         <div className="intro mt-20">
-          <h3 className=" lg:text-base sm:pb-3 text-indigo-700">
+          <h3 className=" lg:text-base sm:pb-3 text-indigo-700 dark:text-indigo-200">
             ————— {item.isim}
           </h3>
           <div className="flex content-center lg:flex-row lg:items-end ">
             <div className=" pr-5  flex-1">
-              <h2 className=" mb-9 text-6xl font-bold ">{item.slogan}</h2>
-              <p className="text-gray-600 mb-9 text-2xl pr-3 ">
+              <h2 className=" mb-9 text-6xl font-bold dark:text-gray-300 ">
+                {item.slogan}
+              </h2>
+              <p className="text-gray-600 dark:text-white mb-9 text-2xl pr-3 ">
                 {item.aciklama}
               </p>
               <div className="flex lg:mt-3 gap-2 max-sm:my-5  max-sm:w-9/12 sm:mt-3 max-lg:mb-3">
-                <button className="bg-blue-800 hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-10 border border-blue-800  rounded">
+                <button className="dark:bg-indigo-200 dark:text-black hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-10 border border-blue-800  rounded">
                   Hire me
                 </button>
                 <a href="https://github.com/SeyyitBattal">

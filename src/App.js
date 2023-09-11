@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark App" : "App"}>
-      <div className="bg-white dark:bg-slate-800 text-black dark:text-gray-400">
+      <div className="bg-white dark:bg-slate-900 text-black dark:text-gray-300">
         <header>
           <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
         </header>
