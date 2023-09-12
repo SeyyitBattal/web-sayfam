@@ -1,5 +1,10 @@
-export const profileDataEN = {
-  title: "Profile",
+export const profileData = {
+  tr: {
+    title: "Profil",
+  },
+  en: {
+    title: "Profile",
+  },
 };
 
 export const myInfo = [

@@ -24,9 +24,9 @@ const MyFooter = () => {
       </h1>
 
       <div className="footer-mail-links mt-20 flex justify-between">
-        <div>
+        <div className="ml-64">
           👉
-          <label className="underline text-pink-600 dark:text-indigo-200 ml-60">
+          <label className="underline text-pink-600 dark:text-indigo-200">
             {footerData.mail}
           </label>
         </div>

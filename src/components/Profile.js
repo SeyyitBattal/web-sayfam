@@ -1,14 +1,19 @@
-import { myInfo, aboutMe, profileDataEN } from "../data/ProfileData";
+import { useContext } from "react";
+import { myInfo, aboutMe, profileData } from "../data/ProfileData";
+import { websiteContext } from "../contexts/websiteContext";
 
 export const Profile = () => {
+  const { language } = useContext(websiteContext);
   return (
     <div className="profileSection">
-      <h1 className="mb-6 text-5xl font-bold ">{profileDataEN.title}</h1>
+      <h1 className="mb-6 text-5xl font-bold ">
+        {profileData[language].title}
+      </h1>
 
       <div className="profileAndAbout">
         <div>
           <h1 className="mb-2 lg:text-4xl text-indigo-700 dark:text-indigo-200 font-medium max-lg:text-3xl max-lg:text-center">
-            {profileDataEN.title}
+            {profileData[language].title}
           </h1>
 
           {myInfo.map((item, key) => (

@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 import { headerData } from "../data/HeaderData";
+import axios from "axios";
+import { websiteContext } from "../contexts/websiteContext";
 
 const MyHeader = (props) => {
+  //Dark Mode bölümü
   const toggleMode = (e) => {
     e.preventDefault();
     props.setDarkMode(!props.darkMode);
+  };
+
+  //Language Bölümü
+  const { language, setLanguage } = useContext(websiteContext);
+  const languageHandler = () => {
+    axios
+      .post("https://reqres.in/api/users", { language })
+      .then((res) => {
+        setLanguage(res.data.language === "tr" ? "en" : "tr");
+        localStorage.setItem(
+          "language",
+          res.data.language === "tr" ? "en" : "tr"
+        );
+      })
+      .catch((err) => console.log(err));
   };
 
   const render = headerData.map((item) => {
     return (
       <div>
         <div className="toggle_language">
-          <label className="relative inline-flex items-center mr-5 cursor-pointer">
+          <label className="mt-6 relative inline-flex items-center mr-5 cursor-pointer">
             <div className={props.darkMode ? "toogle toggled" : "toggle"}>
               <input
                 type="checkbox"
@@ -20,16 +38,17 @@ const MyHeader = (props) => {
                 onClick={toggleMode}
               />
             </div>
-            <div className="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+            <div className=" w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
 
             <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
               DARK MODE |
             </span>
           </label>
-
-          <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
-            TÜRKÇE'YE GEÇ
-          </span>
+          <div className="lang" onClick={languageHandler}>
+            <span className="mt-7 ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
+              TÜRKÇE'YE GEÇ
+            </span>
+          </div>
         </div>
 
         <div className="topButtons">
