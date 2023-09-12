@@ -38,7 +38,7 @@ export const Profile = () => {
 
         <div className="about-box lg:w-1/2 sm:w-9/12 max-sm:w-9/12 max-lg:px-4  max-sm:m-auto  max-sm:px-4   max-sm:mt-5 sm:mx-auto  ">
           <h3 className="mb-2 lg:text-4xl text-indigo-700 dark:text-indigo-200 font-medium max-lg:text-3xl max-lg:text-center ">
-            About Me
+            {profileData[language].hakkimda}
           </h3>
           <div className=" text-black dark:text-white  lg:text-xl sm:text-lg max-lg:px-5  ">
             <p className="lg:pb-3 max-sm:pb-3 sm:pb-3">{aboutMe[0].about}</p>

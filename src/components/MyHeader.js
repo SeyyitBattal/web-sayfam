@@ -2,8 +2,22 @@ import React, { useContext } from "react";
 import { headerData } from "../data/HeaderData";
 import axios from "axios";
 import { websiteContext } from "../contexts/websiteContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MyHeader = (props) => {
+  const notify = () =>
+    toast.success("Dil tercihiniz değiştirildi!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
   //Dark Mode bölümü
   const toggleMode = (e) => {
     e.preventDefault();
@@ -25,7 +39,7 @@ const MyHeader = (props) => {
       .catch((err) => console.log(err));
   };
 
-  const render = headerData.map((item) => {
+  const render = headerData[language].headerArray.map((item, index) => {
     return (
       <div>
         <div className="toggle_language">
@@ -40,14 +54,29 @@ const MyHeader = (props) => {
             </div>
             <div className=" w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
 
-            <span className="ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
-              DARK MODE |
+            <span className=" ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
+              Dark / Light |
             </span>
           </label>
-          <div className="lang" onClick={languageHandler}>
-            <span className="mt-7 ml-3 text-sm font-medium text-brown-900 dark:text-brown-300">
-              TÜRKÇE'YE GEÇ
+          <div key={index} className="lang mt-6" onClick={languageHandler}>
+            <span
+              onClick={notify}
+              className=" text-sm font-medium text-brown-900 dark:text-brown-300"
+            >
+              | {item.tercih}
             </span>
+            <ToastContainer
+              position="top-center"
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="colored"
+            />
           </div>
         </div>
 
@@ -63,7 +92,7 @@ const MyHeader = (props) => {
           </button>
         </div>
 
-        <div className="intro mt-20">
+        <div key={index} className="intro mt-20">
           <h3 className=" lg:text-base sm:pb-3 text-indigo-700 dark:text-indigo-200">
             ————— {item.isim}
           </h3>

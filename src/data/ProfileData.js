@@ -5,6 +5,7 @@ export const profileData = {
     ikametgah: "İstanbul",
     egitim: "Gazi Ünv. Enerji Müh. Lisans, 2019",
     rolTercihi: "Full Stack Developer",
+    hakkimda: "Hakkımda",
   },
   en: {
     title: "Profile",
@@ -12,6 +13,7 @@ export const profileData = {
     ikametgah: "İstanbul",
     egitim: "Gazi Uni. Energy Eng. Licence, 2019",
     rolTercihi: "Full Stack Developer",
+    hakkimda: "About Me",
   },
 };
 
