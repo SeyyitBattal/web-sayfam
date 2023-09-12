@@ -1,9 +1,17 @@
 export const profileData = {
   tr: {
     title: "Profil",
+    dogumTrh: "30.03.1997",
+    ikametgah: "İstanbul",
+    egitim: "Gazi Ünv. Enerji Müh. Lisans, 2019",
+    rolTercihi: "Full Stack Developer",
   },
   en: {
     title: "Profile",
+    dogumTrh: "30.03.1997",
+    ikametgah: "İstanbul",
+    egitim: "Gazi Uni. Energy Eng. Licence, 2019",
+    rolTercihi: "Full Stack Developer",
   },
 };
 

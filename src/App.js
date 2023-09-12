@@ -1,10 +1,11 @@
 import React from "react";
+import { useInput } from "./components/geceModuAc";
+import WebSiteProvider from "./contexts/websiteContext";
 import MyHeader from "./components/MyHeader";
 import MyBody from "./components/MyBody";
 import MyFooter from "./components/MyFooter";
-import { useInput } from "./components/geceModuAc";
+import Projects from "./components/Projects";
 import "./App.css";
-import WebSiteProvider from "./contexts/websiteContext";
 
 function App() {
   const [darkMode, setDarkMode, onClickHandler] = useInput("Mood", false);
@@ -18,6 +19,7 @@ function App() {
               <MyHeader darkMode={darkMode} setDarkMode={onClickHandler} />
             </header>
             <MyBody />
+            <Projects />
           </div>
           <MyFooter />
         </WebSiteProvider>
