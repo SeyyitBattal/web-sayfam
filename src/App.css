@@ -51,3 +51,25 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.footerSection {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footerSlogan {
+  flex-basis: 1000px;
+}
+.footerLinks {
+  flex-basis: 1500px;
+  flex-wrap: wrap;
+}
+.footer-links {
+  justify-content: space-around;
+}
+.footerForm {
+  flex-basis: 1700px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

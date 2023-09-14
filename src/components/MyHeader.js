@@ -91,7 +91,6 @@ const MyHeader = (props) => {
             Hire me
           </button>
         </div>
-
         <div key={index} className="intro mt-20">
           <h3 className=" lg:text-base sm:pb-3 text-indigo-700 dark:text-indigo-200">
             ————— {item.isim}
