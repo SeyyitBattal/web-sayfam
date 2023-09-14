@@ -52,7 +52,7 @@ const MyFooter = () => {
           </a>
         </div>
       </div>
-      <div className="footerForm flex flex-col items-center my-20 gap-6 mx-8 bg-white dark:bg-black">
+      <div className="footerForm flex flex-col items-center my-10 gap-6 mx-8 bg-white dark:bg-black">
         <div className="send-message">
           <button
             className=" text-4xl font-semibold text-[#4731D3] font-serif mb-8"
