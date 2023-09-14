@@ -1,5 +1,4 @@
 .allPage {
-  /* margin: 2rem 13rem 0rem 13rem; */
   margin: 0 auto;
   max-width: 65%;
 }
@@ -16,8 +15,33 @@
   margin-bottom: 5rem;
 }
 
+.skillsSection {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.skills-js {
+  flex-basis: 290px;
+}
+.skills-react {
+  flex-basis: 290px;
+}
+.skills-node {
+  flex-basis: 290px;
+}
+
 .profileAndAbout {
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.profile {
+  flex-basis: 290px;
+}
+.aboutMe {
+  flex-basis: 600px;
 }
 
 .viewGithub {
@@ -26,8 +50,4 @@
 .projects-boxes {
   display: flex;
   flex-wrap: wrap;
-}
-
-.skillsSection {
-  display: flex;
 }
